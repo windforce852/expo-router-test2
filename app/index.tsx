@@ -8,6 +8,7 @@ export default function Root() {
     <View style={{flex: 1, display: "flex", justifyContent: "center", alignItems: "center"}}>
       <Text>Login</Text>
       <Pressable onPress={() => {router.push("/otpAuth/otp")}}><Text>email auth</Text></Pressable>
+      <Pressable onPress={() => {router.push("/posts/list")}}><Text>router push list</Text></Pressable>
       <Link href={'/about'}>Link to About</Link>
       <Link href={'/posts/list'}>Link to List</Link>
       <Link href={'/posts'}>Link to Posts Home</Link>
