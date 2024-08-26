@@ -1,7 +1,7 @@
 import { View, Text, Pressable } from "react-native"
 import { router, Link } from "expo-router"
 
-export default function() {
+export default function List() {
   return (
     <>
     <View style={{flex: 1, display: "flex", justifyContent: "center", alignItems: "center"}}>
