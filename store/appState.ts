@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import emailAuthSlice from "./slice/emailAuthSlice";
 import otpAuthSlice from "./slice/otpAuthSlice";
+import { EmailAuthState } from "./slice/emailAuthSlice";
 
 const store = configureStore({
   reducer: {

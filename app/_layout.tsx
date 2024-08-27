@@ -1,6 +1,7 @@
 import { Stack } from "expo-router";
-import store from "@/store/appState";
 import { Provider } from "react-redux";
+import store from "@/store/appState";
+import { Redirect } from "expo-router";
 
 export default function RootLayout() {
   console.log('RootLayout Fire')
@@ -9,12 +10,12 @@ export default function RootLayout() {
     <Provider store={store}>
       <Stack>
         <Stack.Screen
-          name="list"
-          options={{headerShown: false}}
+          name="(protected)"
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="auth"
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
       </Stack>
     </Provider>

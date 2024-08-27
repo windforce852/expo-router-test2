@@ -12,8 +12,8 @@ export default function OtpAuthScreen() {
       <Text>OtpAuthScreen</Text>
         <Pressable onPress={() => {
             dispatch(setOTPAuthStat(true))
-            router.push('/auth/otpAuth')}}
-          >
+            router.push('/(protected)/list/listScreen')
+          }}>
             <Text>login</Text>
           </Pressable>
     </View>

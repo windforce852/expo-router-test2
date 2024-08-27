@@ -11,10 +11,6 @@ export default function authLayout() {
         name="otpAuth"
         options={{headerShown: false}}
       />
-      <Stack.Screen
-        name="list"
-        options={{headerShown: false}}
-      />
     </Stack>
   )
 }

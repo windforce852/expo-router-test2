@@ -12,12 +12,12 @@ const emailAuthState = createSlice({
   name: 'emailAuthState',
   initialState,
   reducers: {
-    setEmailAuthStat: (state, action) => {
+    setEmailAuthState: (state, action: PayloadAction<boolean>) => {
       state.emailAuthState = action.payload;
     },
   }
 })
 
-export const { setEmailAuthStat } = emailAuthState.actions;
+export const { setEmailAuthState } = emailAuthState.actions;
 
 export default emailAuthState.reducer;
